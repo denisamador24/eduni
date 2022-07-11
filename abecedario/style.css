@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Roboto Slab";
+  font-family: "Alber Sans";
   src: url('../assets/fonts/AlbertSans.ttf');
 }
 * {
@@ -22,7 +22,7 @@ body {
   grid-template-columns: repeat(auto-fill, 100px);
   grid-auto-rows: 100px;
   place-content: center;
-  font-family: 'Roboto Slab';
+  font-family: 'Alber Sans';
   font-size: 6rem;
   font-weight: 700;
 }
@@ -31,7 +31,9 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  background-color: yellow;
+  /*background-color: yellow;*/
+  background: rgb(232, 255, 79);
+  background: linear-gradient(90deg, rgba(232, 255, 79, 1) 1%, rgba(107, 227, 251, 1) 100%);
   border-radius: 50px;
   box-shadow:  4px 4px 5px rgba(0, 0, 0, 0.4);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
