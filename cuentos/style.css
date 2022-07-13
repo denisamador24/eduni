@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Alber Sans";
+  src: url('../assets/fonts/AlbertSans-.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: url('../assets/img/globos.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

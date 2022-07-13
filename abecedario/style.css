@@ -43,8 +43,8 @@ body {
   border-radius: 50px;
   background-color: forestgreen;
   /*background: rgb(232, 255, 79);
-  background: linear-gradient(90deg, rgba(232, 255, 79, 1) 1%, rgba(107, 227, 251, 1) 100%);
-  box-shadow:  4px 4px 5px rgba(0, 0, 0, 0.4);*/
+  background: linear-gradient(90deg, rgba(232, 255, 79, 1) 1%, rgba(107, 227, 251, 1) 100%);*/
+  box-shadow:  4px 4px 5px rgba(0, 0, 0, 0.4);
   text-shadow: 4px 4px 2px rgb(0, 0, 0);
 }
 .abecedario__item:active {
