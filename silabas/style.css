@@ -27,9 +27,9 @@ body {
   margin: 8px;
   padding: 8px;
   border-radius: 14px;
-  /*background-color: yellow;*/
-  background: rgb(232,255,79);
-  background: linear-gradient(90deg, rgba(232,255,79,1) 1%, rgba(107,227,251,1) 100%);
+  background-color: yellow;
+  /*background: rgb(232,255,79);
+  background: linear-gradient(90deg, rgba(232,255,79,1) 1%, rgba(107,227,251,1) 100%);*/
 }
 #silabas > div > p {
   font-size: 4rem;

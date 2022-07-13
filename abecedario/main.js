@@ -1,16 +1,18 @@
 const alphabet = ['A','B','C','D','E','F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'Ñ' ,'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+const formatSound = ".m4a"
+const srcSounds = "../assets/sound/"
 
-var formatSound = ".m4a"
-var srcSounds = "../assets/sound/"
-
-var gridAbecedario = document.getElementById("abecedario")
+const gridAbecedario = document.getElementById("abecedario")
 
 for (var i = 0; i < alphabet.length; i++){
   setAlphabet(i)
 }
 
 function setAlphabet (position) {
-  var divLetter = document.createElement("div")
+  
+  const itemGrid = document.createElement('div');
+  
+  const divLetter = document.createElement("div")
   divLetter.setAttribute("class", "abecedario__item")
   
   var p = document.createElement("p")
@@ -27,5 +29,6 @@ function setAlphabet (position) {
     }
   )
   
-  gridAbecedario.appendChild(divLetter)
+  itemGrid.appendChild(divLetter);
+  gridAbecedario.appendChild(itemGrid);
 }
