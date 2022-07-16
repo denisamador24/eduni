@@ -34,8 +34,8 @@ syllables.push(new Syllable('S', ['Sa', 'Se', 'Si', 'So', 'Su']));
 
 const syllablesDiv = document.getElementById('silabas');
 
-for (index in syllables) {
-  let card = CreateElements(syllables[index]);
+for (syllable of syllables) {
+  let card = CreateElements(syllable);
  
   syllablesDiv.appendChild(card);
 }

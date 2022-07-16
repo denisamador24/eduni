@@ -1,76 +1,73 @@
 //contenedor de la lista de cuentos en el HTML
-const mainContainer = document.getElementById('stories');
 const main = document.getElementById('main');
-let saveMainContainer = ''
-
-const urlImg = '../assets/img/'
 
 listCuentos()
 
 function listCuentos() {
-  
+  const mainContainer = document.createElement('div');
+  mainContainer.setAttribute('id', 'stories')
   //recorer lista de cuentos en el archivo 'cuentos.js'
-  for (cuento of cuentos){
+  for (cuento of cuentos) {
     let card = cardCuento(cuento)
-    
+
     //agregar nuevo cuento al contenedor
     mainContainer.appendChild(card)
   }
+  
+  main.appendChild(mainContainer)
 }
 
 //crear card del cuento y componentes
 function cardCuento(cuento) {
-  
+
   let cardCuento = document.createElement('div')
-  
-  let img = document.createElement('img')
-  img.src = urlImg + cuento.img + '.jpg'
-  cardCuento.appendChild(img)
-  
-  let nameP = document.createElement('p')
-  nameP.innerHTML = cuento.name
-  cardCuento.appendChild(nameP)
-  
-  cardCuento.addEventListener('click',() => {
+
+  cardCuento.innerHTML = `
+    <img src="${cuento.img}">
+    <p>${cuento.name}</p>
+  `
+
+  cardCuento.addEventListener('click', () => {
     readStorie(cuento)
   })
- 
+
   return cardCuento;
 }
 
-function readStorie (cuento) {
+function readStorie(cuento) {
+
+  let { name, img, content } = cuento;
+
+  //crear cotenedor para leer cuento
+  let divContentStorie = `
+    <div class="contentStorie">
+    
+      <div class="title">
+        <div id="back">
+          <img src="../assets/icon/back.png">
+        </div>
+        <p>${name}</p>
+      </div>
+    
+      <div class="picture">
+        <img src="${img}">
+      </div>
+      
+      <div class="content">
+        <p>${content}</p>
+      </div>
+      
+    </div>
+  `
+  //guardar lista de cuento del main para remplazar el contenido del cuento para leer
+  main.innerHTML = divContentStorie
+  let body = document.getElementById('body')
+  body.setAttribute('class', 'body')
   
-  let {name, img, content} = cuento;
-  //guardar html para remplarza otra vista de leer cuento
-  saveMainContainer = main.innerHTML;
-  
-  let divContentStorie = document.createElement('div');
-  divContentStorie.setAttribute('class', 'contentStorie');
-  
-  let divPicture = document.createElement('div');
-  divPicture.setAttribute('class', 'picture');
-  let pictureImg = document.createElement('img');
-  pictureImg.src = urlImg+img+'.jpg';
-  let pictureP = document.createElement('p');
-  pictureP.innerHTML = name;
-  
-  divPicture.appendChild(pictureImg);
-  divPicture.appendChild(pictureP);
-  
-  let divContent = document.createElement('div');
-  divContent.setAttribute('class', 'content');
-  let contentP = document.createElement('p');
-  contentP.innerHTML = content;
-  
-  divContent.appendChild(contentP);
-  
-  divContentStorie.appendChild(divPicture);
-  divContentStorie.appendChild(divContent);
-  
-  main.innerHTML = '';
-  main.appendChild(divContentStorie)
-  //storieTransaction = cuento;
- // window.location.href = '/cuentos/leerCuento/'
+  const backArrow = document.getElementById('back')
+  backArrow.addEventListener('click', () => {
+   main.innerHTML = ''
+   body.setAttribute('class', '')
+   listCuentos()
+  })
 }
-
-

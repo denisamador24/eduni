@@ -9,29 +9,33 @@
 }
 html {
   font-size: 62.5%;
+   font-family: 'Alber Sans';
 }
 body {
   background-image: url('../assets/img/globos.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Alber Sans'
+ 
 }
 #stories {
   width: 100%;
-  height:  98vh;
-  margin: 1vh 0 1vh;
+  height:  100vh;
+  padding: 10px;
   overflow: hidden;
   overflow-y: scroll;
   display: grid;
   gap: 32px 16px;
-  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 #stories > div {
+  width: 260px;
+  height: min-content;
   background-color: yellow;
   border-radius: 14px;
 }
 #stories > div > img {
-  width: 260px;
+  width: 100%;
   border-radius: 14px 14px 0 0;
 }
 #stories > div > p {
@@ -39,4 +43,58 @@ body {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 700;
+}
+@media (min-width: 600px){
+  #stories {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* Sección leer cuento */
+
+.body {
+  background: none;
+}
+.contentStorie {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.title {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+.title #back {
+  width: 44px;
+  height: 44px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 50px;
+}
+.title #back img {
+  width: 100%;
+  align-self: center;
+  padding-top: 2px;
+}
+.title > p {
+  margin-left: 16px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.picture {
+  display: flex;
+  justify-content: center;
+}
+.picture img {
+  width: 260px;
+  border-radius: 14px;
+}
+.contentStorie .content {
+  margin: 16px;
+  padding: 8px;
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 1px;
 }

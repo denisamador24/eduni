@@ -4,11 +4,31 @@ const srcSounds = "../assets/sound/"
 
 const gridAbecedario = document.getElementById("abecedario")
 
-for (var i = 0; i < alphabet.length; i++){
-  setAlphabet(i)
+for (letter of alphabet){
+  setAlphabet(letter)
 }
 
-function setAlphabet (position) {
+function setAlphabet (letter) {
+  
+  /*let itemGrid = `
+    <div>
+      <div class="abecedario__item">
+        <p>${letter}</p>
+        
+      </div>
+    </div>
+  `
+  gridAbecedario.innerHTML += itemGrid
+  const item = document.getElementsByClassName('abecedario__item')
+  const audio = document.createElement('audio')
+  
+  audio.src = `../assets/sound/${letter.toLowerCase()}.m4a`
+  item.appendChild(audio)
+  item.addEventListener('click', () => {
+    
+  })
+  */
+  
   
   const itemGrid = document.createElement('div');
   
@@ -18,8 +38,8 @@ function setAlphabet (position) {
   var p = document.createElement("p")
   var sound = document.createElement("audio")
   
-  p.innerHTML = alphabet[position]
-  sound.src = srcSounds + alphabet[position].toLowerCase() + formatSound
+  p.innerHTML = letter
+  sound.src = srcSounds + letter.toLowerCase() + formatSound
   divLetter.appendChild(p)
   divLetter.appendChild(sound)
   
