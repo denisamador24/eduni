@@ -1,5 +1,9 @@
 //contenedor de la lista de cuentos en el HTML
 const mainContainer = document.getElementById('stories');
+const main = document.getElementById('main');
+let saveMainContainer = ''
+
+const urlImg = '../assets/img/'
 
 listCuentos()
 
@@ -16,7 +20,6 @@ function listCuentos() {
 
 //crear card del cuento y componentes
 function cardCuento(cuento) {
-  let urlImg = '../../assets/img/'
   
   let cardCuento = document.createElement('div')
   
@@ -28,11 +31,46 @@ function cardCuento(cuento) {
   nameP.innerHTML = cuento.name
   cardCuento.appendChild(nameP)
   
-  cardCuento.addEventListener('clicl', readStorie)
-  
+  cardCuento.addEventListener('click',() => {
+    readStorie(cuento)
+  })
+ 
   return cardCuento;
 }
 
-function readStorie () {
-  console.log('hello')
+function readStorie (cuento) {
+  
+  let {name, img, content} = cuento;
+  //guardar html para remplarza otra vista de leer cuento
+  saveMainContainer = main.innerHTML;
+  
+  let divContentStorie = document.createElement('div');
+  divContentStorie.setAttribute('class', 'contentStorie');
+  
+  let divPicture = document.createElement('div');
+  divPicture.setAttribute('class', 'picture');
+  let pictureImg = document.createElement('img');
+  pictureImg.src = urlImg+img+'.jpg';
+  let pictureP = document.createElement('p');
+  pictureP.innerHTML = name;
+  
+  divPicture.appendChild(pictureImg);
+  divPicture.appendChild(pictureP);
+  
+  let divContent = document.createElement('div');
+  divContent.setAttribute('class', 'content');
+  let contentP = document.createElement('p');
+  contentP.innerHTML = content;
+  
+  divContent.appendChild(contentP);
+  
+  divContentStorie.appendChild(divPicture);
+  divContentStorie.appendChild(divContent);
+  
+  main.innerHTML = '';
+  main.appendChild(divContentStorie)
+  //storieTransaction = cuento;
+ // window.location.href = '/cuentos/leerCuento/'
 }
+
+
