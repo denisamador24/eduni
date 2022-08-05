@@ -30,7 +30,26 @@ syllables.push(new Syllable('F', ['Fa', 'Fe', 'Fi', 'Fo', 'Fu']
 
 syllables.push(new Syllable('R', ['Ra', 'Re', 'Ri', 'Ro', 'Ru']));
 
+syllables.push(new Syllable('B', ['Ba', 'Be', 'Bi', 'Bo', 'Bu']));
+
+syllables.push(new Syllable('C', ['Ca', 'Ce', 'Ci', 'Co', 'Cu']));
+
+syllables.push(new Syllable('D', ['Da', 'De', 'Di', 'Do', 'Du']));
+
+syllables.push(new Syllable('G', ['Ga', 'Ge', 'Gi', 'Go', 'Gu']));
+
+syllables.push(new Syllable('J', ['Ja', 'Je', 'Ji', 'Jo', 'Ju']));
+
 syllables.push(new Syllable('S', ['Sa', 'Se', 'Si', 'So', 'Su']));
+
+syllables.push(new Syllable('K', ['Ka', 'Ke', 'Ki', 'Ko', 'Ku']));
+
+syllables.push(new Syllable('L', ['La', 'Le', 'Li', 'Lo', 'Lu']));
+
+syllables.push(new Syllable('N', ['Na', 'Ne', 'Ni', 'No', 'Nu']));
+
+syllables.push(new Syllable('T', ['Ta', 'Te', 'Ti', 'To', 'Tu']));
+
 
 const syllablesDiv = document.getElementById('silabas');
 
