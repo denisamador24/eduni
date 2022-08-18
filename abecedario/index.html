@@ -4,17 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>EDUNI | Abecedario</title>
   
   <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="../assets/styles/time.css">
+  <link rel="stylesheet" href="../assets/styles/header.css">
 </head>
 
 <body>
-   <header>
-    <div class="cound-time">
-      <div>
-        <span class="cound-time__span">1 min</span>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img class="logo__img" src="../assets/img/abecedario.png" alt="logo">
+        <p class="logo__name">Abecedario</p>
+      </div>
+      <div class="time">
+        <span id="time-cound" class="time__span"></span>
         <img src="../assets/icon/time-clock.png" alt="Tiempo">
       </div>
     </div>
@@ -25,7 +29,8 @@
     </div>
   </main>
   
-  <script src="main.js"></script>
+  <script src="../time.js"></script>
+  <script src="./main.js"></script>
 </body>
 
 </html>

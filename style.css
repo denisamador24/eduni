@@ -17,26 +17,6 @@ header {
   width: 100%;
   height: min-content;
 }
-a {
-  text-decoration: none;
-}
-.logo {
-  padding-block-start: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.logo img {
-  width: 88px;
-  height: 88px;
-  border-radius: 50px;
-}
-.logo p {
-  font-size: 1.8rem;
-  margin-inline-start: 8px;
-  font-family: 'Roboto';
-  font-weight: bold;
-}
 .category {
   display: flex;
   flex-direction: column;

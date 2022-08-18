@@ -71,3 +71,5 @@ function readStorie(cuento) {
    listCuentos()
   })
 }
+
+setInterval(timer, 1000);

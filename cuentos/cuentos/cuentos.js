@@ -22,11 +22,11 @@ const cuentos = [];
 cuentos.push(new Cuento({
   img: 'superman',
   name: 'Superman',
-  content: "Un dia Superman estaba  volando cuando vio a un monstruo. Superman le ganó y se fue volando a" +
-  " su casa. Se subió al tejado, el tejado se rompió porque estaba sucio y Superman se cayó, se" +
+  content: "Un día Superman estaba  volando cuando vio a un monstruo. Superman le ganó y se fue volando a" +
+  " su casa. Se subió al tejado, el tejado se rompió porque estaba sucio y Superman se cayó, se " +
   "rompió un diente y fue al dentista. El dentista era otro monstruo que se llamaba Samuel," +
-  " entonces Superman le ganó también y se fue a otro dentista que no dijera mentiras y fuera" +
-  "simpático. Alli se curó el diente. Al salir se encontre a una mosca, se hicieron amigos, se fueron de" +
+  " entonces Superman le ganó también y se fue a otro dentista que no dijera mentiras y fuera " +
+  "simpático. Alli se curó el diente. Al salir se encontre a una mosca, se hicieron amigos, se fueron de " +
   "excursión a la selva y la pasaron muy bien."
 }));
 
@@ -34,10 +34,10 @@ cuentos.push(new Cuento({
 cuentos.push(new Cuento({
   img: 'tortuga',
   name: 'Tortuga Tomasa',
-  content: "Un día de sol la Tortuga Tomasa se fue al columpio y luego se cayó del columpio. Vino al " +
+  content: "Un día de sol la Tortuga Tomasa se fue al columpió y luego se cayó del columpio. Vino al " +
   "parque. Allí una amiga tortuga  la ayudó a levantarse. Jugando las dos tortugas encontraron una casa." +
   " La casa estaba llena de agua.  Abrieron las ventanas y la puerta y se vació de agua. Subieron al " +
-  "tejado y había un tambor y una trompeta. Las cogieron y se pusieron a tocarlas. Al rato fueron al " +
+  "tejado y había un tambor y una trompeta. Las cogieron y se pusieron a tocarlas. Al rato fueron a " +
   "un bar a comprar un bocadillo de tomate y se lo tomaron en casa de Tomasa con un tenedor."
 }));
 
@@ -46,8 +46,8 @@ cuentos.push(new Cuento({
   name: 'El Raton y el Rey',
   content: "Érase una vez un ratón que iba caminando y se encontró con una rana, el ratón luego se fue al río " +
     "que estaba debajo de las montañas y  había mucha, mucha agua. Entonces decidió echar a la rana " +
-    "al rio para que pudiera nadar. Empezó a llover y se escondió debajo de un árbol. Alli había también " +
-    "un rey que tampoco se queria mojar. Se quedaron alli y entre los dos hicieron una cueva debajo de " +
+    "al río para que pudiera nadar. Empezó a llover y se escondió debajo de un árbol. Allí había también " +
+    "un rey que tampoco se quería mojar. Se quedaron allí y entre los dos hicieron una cueva debajo de " +
     "la tierra. Al lado había una rosa. El rey la tocó y se pincho. Le salió mucha sangre pero el ratón lo " +
     "curó y le puso una tirita"
 }))
@@ -83,9 +83,9 @@ cuentos.push(new Cuento({
 
 cuentos.push(new Cuento({
   img: 'leon',
-  name: 'El Leon Lolo',
+  name: 'El León Lolo',
   content: "Había una vez un león que se llamaba Lolo, un día se encontró un teléfono en el suelo. Lo cogió y " +
-  "llamó a su amigo el lobo para que  fuera a verle. Entonces vino un elefante a la cueva Y el león le " +
+  "llamó a su amigo el lobo para que  fuera a verle. Entonces vino un elefante a la cueva y el león le " +
   "dijo: ¡vete de mi casa!. De repente se hizo de noche y apareció el lobo. El león le dijo a su amigo " +
   "lobo que echara al elefante. El elefante se marchó porque pesaba mucho y Lolo el Lobo se fueron " +
   "de paseo. Se encontraron al elefante que estaba llorando y se lo llevaron a su casa. Le dieron " +
@@ -95,8 +95,8 @@ cuentos.push(new Cuento({
 cuentos.push(new Cuento({
   img: 'mariquita',
   name: 'La Mariquita y el Mosquito',
-  content:  "Una mariquita que se llamaba Quica fue a pasear al bosque. En el bosque habia un periquito y un " +
-   "estanque con ranas y cisnes. Llegó un mosquito y le chupó la sangre Entonces Quica se quedó sin " +
+  content:  "Una mariquita que se llamaba Quica fue a pasear al bosque. En el bosque había un periquito y un " +
+   "estanque con ranas y cisnes. Llegó un mosquito y le chupó la sangre. Entonces Quica se quedó sin " +
    "sangre y no podía pensar, el periquito como estaba vigilando lo vio todo y le ayudó dándole queso " +
    "y quicos porque dan mucha fuerza. Cuando Quica se puso bien ya podia pensar y le dio las gracias " +
    "y un paquete al periquito. Dentro del paquete había una quimona. El periquito se lo puso y le gustó " +

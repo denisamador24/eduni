@@ -12,46 +12,41 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="../assets/styles/time.css">
+  <link rel="stylesheet" href="../assets/styles/header.css">
 </head>
 
 <body>
   <header>
-    <div class="cound-time">
-      <div>
-        <span class="cound-time__span">1 min</span>
+    <div class="container">
+      <div class="logo">
+        <img class="logo__img" src="./assets/img/logo.jpg" alt="logo">
+        <p class="logo__name">EDUNI</p>
+      </div>
+      <div class="time">
+        <span id="time-cound" class="time__span">0s</span>
         <img src="./assets/icon/time-clock.png" alt="Tiempo">
       </div>
     </div>
   </header>
   <main>
-    <div class="logo">
-      <img class="logo__img" src="./assets/img/logo.jpg" alt="logo">
-      <p class="logo__name">EDUNI</p>
-    </div>
     
     <div class="category">
-      <div class="category__card">
-        <a href="./abecedario/index.html">
-          <img src="./assets/img/abecedario.png" alt="abecedario">
-          <p>Abecedario</p>
-        </a>
+      <div id="card-abecedario" class="category__card">
+        <img src="./assets/img/abecedario.png" alt="abecedario">
+        <p>Abecedario</p>
       </div>
-      <div class="category__card">
-        <a href="./silabas/index.html">
-          <img src="./assets/img/silabas.jpg" alt="silabas">
-          <p>Sílabas</p>
-        </a>
+      <div id="card-silabas" class="category__card">
+        <img src="./assets/img/silabas.jpg" alt="silabas">
+        <p>Sílabas</p>
       </div>
-      <div class="category__card">
-        <a href="./cuentos/index.html">
-          <img src="./assets/img/cuentos.jpg" alt="cuentos">
-          <p>Cuentos</p>
-        </a>
+      <div id="card-cuentos" class="category__card">
+        <img src="./assets/img/cuentos.jpg" alt="cuentos">
+        <p>Cuentos</p>
       </div>
     </div>
   </main>
   <!-- Project -->
+  <script src="time.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

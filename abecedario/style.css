@@ -15,6 +15,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+main {
+  height: calc(100vh - 70px);
+  overflow-x: scroll;
+}
 #abecedario {
   max-width: 720px;
   margin: 4px auto;

@@ -86,3 +86,5 @@ function CreateElements(elemen) {
   
   return syllableCard;
 }
+
+setInterval(timer, 1000);

@@ -16,6 +16,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+main {
+  height: calc(100vh - 70px);
+  overflow-x: scroll;
+}
 #silabas {
   display: flex;
   flex-direction: column;

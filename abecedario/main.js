@@ -52,3 +52,5 @@ function setAlphabet (letter) {
   itemGrid.appendChild(divLetter);
   gridAbecedario.appendChild(itemGrid);
 }
+
+setInterval(timer, 1000);
