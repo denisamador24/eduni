@@ -50,3 +50,8 @@ function formatDate (){
 function saveTime (){
   sessionStorage.setItem('time', JSON.stringify(time));
 }
+
+window.addEventListener('hashchange', () => {
+  saveTime();
+  alert('si')
+});
