@@ -38,7 +38,8 @@ function setAlphabet (letter) {
   var p = document.createElement("p")
   var sound = document.createElement("audio")
   
-  p.innerHTML = letter
+  p.innerText = letter
+  
   sound.src = srcSounds + letter.toLowerCase() + formatSound
   divLetter.appendChild(p)
   divLetter.appendChild(sound)
