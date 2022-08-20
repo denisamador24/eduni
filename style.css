@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Alber Sans";
+  src: url('../assets/fonts/AlberSans.ttf');
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,18 +15,80 @@ body {
     background-image: url('./assets/img/globos.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Roboto';
+    font-family: 'Alber Sans';
 }
+
+/* header */
 header {
   width: 100%;
   height: min-content;
+  box-shadow: 4px 4px 4px rgba(245, 245, 245, 0.2);
+}
+header .container {
+  width: 100%;
+  height: min-content;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  padding-block-start: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.logo p {
+  width: 160px;
+  font-size: 1.8rem;
+  margin-inline-start: 8px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+.time {
+  width: 110px;
+  height: 40px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.time span{
+  width: 60px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+.time img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: -4px;
+}
+
+
+/* main */
+main {
+  width: 100%;
+  height: calc(100vh - 70px);
+  overflow-x: scroll;
+}
+.hide {
+  display: none  !important;
 }
 .category {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: scroll;
 }
 .category__card {
   width: 160px;
@@ -47,4 +113,156 @@ header {
   .category {
     flex-direction: row;
   }
+}
+
+/* alphabet*/
+#abecedario {
+  max-width: 720px;
+  margin: 4px auto;
+  display: grid;
+  gap: 14px 12px;
+  grid-template-columns: repeat(auto-fill, 110px);
+  grid-auto-rows: 110px;
+  place-content: center;
+  font-size: 6rem;
+  font-weight: 900;
+}
+#abecedario > div{
+  height: 100%;
+  background-color: #ffff80;
+  padding: 8px;
+  border-radius: 14px;
+  
+}
+.abecedario__item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  border-radius: 50px;
+  background-color: forestgreen;
+  /*background: rgb(232, 255, 79);
+  background: linear-gradient(90deg, rgba(232, 255, 79, 1) 1%, rgba(107, 227, 251, 1) 100%);*/
+  box-shadow:  4px 4px 5px rgba(0, 0, 0, 0.4);
+  text-shadow: 4px 4px 2px rgb(0, 0, 0);
+}
+.abecedario__item:active {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transform: scale(0.99);
+  border: 1px solid rgba(0, 0, 0, 0.3)
+}
+
+/* Silable */
+#silabas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#silabas > div {
+  width: auto;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 14px;
+  background-color: #ffff80;
+  /*background: rgb(232,255,79);
+  background: linear-gradient(90deg, rgba(232,255,79,1) 1%, rgba(107,227,251,1) 100%);*/
+}
+#silabas > div > p {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-left: 12px;
+  color: forestgreen;
+}
+.silabas__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.silabas__container > div {
+  width: 7.2rem;
+  height: 7.2rem;
+  padding: 8px;
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: bold;
+  border-radius: 14px;
+  background-color: forestgreen;
+  color: yellow;
+  text-shadow: 3px 3px 1px black;
+}
+
+/* Stories*/
+#cuentos {
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  gap: 32px 16px;
+  justify-items: center;
+  align-items: center;
+}
+#cuentos > div {
+  width: 260px;
+  height: min-content;
+  background-color: yellow;
+  border-radius: 14px;
+}
+#cuentos > div > img {
+  width: 100%;
+  border-radius: 14px 14px 0 0;
+}
+#cuentos > div > p {
+  margin: 4px 0 6px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+@media (min-width: 600px){
+  #cuentos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* Sección leer cuento */
+.title {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+.title #back {
+  width: 44px;
+  height: 44px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 50px;
+}
+.title #back img {
+  width: 100%;
+  align-self: center;
+  padding-top: 2px;
+}
+.title > p {
+  margin-left: 16px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+#read-cuento .picture {
+  display: flex;
+  justify-content: center;
+}
+#read-cuento .picture img {
+  width: 260px;
+  border-radius: 14px;
+}
+#read-cuento .content {
+  margin: 16px;
+  padding: 8px;
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 1px;
 }

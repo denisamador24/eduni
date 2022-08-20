@@ -1,10 +1,5 @@
-let time = [];
-console.log(sessionStorage.getItem('time'));
-if (sessionStorage.getItem('time') == null){
-  time = [0, 0, 0]; // [hours, minutes, seconds]
-} else {
-  time = JSON.parse(sessionStorage.getItem('time'));
-}
+let time = [0, 0, 0]; // [hours, minutes, seconds]
+  
 const sTime = document.getElementById('time-cound');
 
 function timer (){
@@ -43,15 +38,5 @@ function formatDate (){
   if (time[2] > 0){
     date += time[2]+'s';
   }
-  console.log(date);
   return date;
 }
-
-function saveTime (){
-  sessionStorage.setItem('time', JSON.stringify(time));
-}
-
-window.addEventListener('hashchange', () => {
-  saveTime();
-  alert('si')
-});

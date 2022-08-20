@@ -11,8 +11,7 @@
   
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="./assets/styles/header.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -30,7 +29,7 @@
   </header>
   <main>
     
-    <div class="category">
+    <section id="category-container" class="category">
       <div id="card-abecedario" class="category__card">
         <img src="./assets/img/abecedario.png" alt="abecedario">
         <p>Abecedario</p>
@@ -43,10 +42,37 @@
         <img src="./assets/img/cuentos.jpg" alt="cuentos">
         <p>Cuentos</p>
       </div>
-    </div>
+    </section>
+    
+    <section id="abecedario" class="hide">
+    </section>
+    
+    <section id="silabas" class="hide">
+    </section>
+    
+    <section id="cuentos" class="hide">
+    </section>
+    
+    <section id="read-cuento" class="hide">
+      <div class="picture">
+        <img src="">
+      </div>
+      
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet debitis consequatur labore porro iste adipisci nulla inventore laudantium, molestias aperiam repellendus recusandae enim perspiciatis voluptatibus eligendi aut nam, quaerat excepturi.</p>
+      </div>
+    </section>
   </main>
   <!-- Project -->
-  <script src="time.js"></script>
-  <script src="main.js"></script>
+  <script src="./time.js"></script>
+  <script src="./nodes.js"></script>
+  <script src="./navigation.js"></script>
+  <script src="./main.js"></script>
+  
+  <!-- Sections -->
+  <script src="./abecedario/main.js"></script>
+  <script src="./silabas/main.js"></script>
+   <script src="./cuentos/cuentos/cuentos.js"></script>
+  <script src="./cuentos/main.js"></script>
 </body>
 </html>
