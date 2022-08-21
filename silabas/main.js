@@ -48,7 +48,7 @@ function startListSyllables (){
       syllable.innerHTML = position;
       
       let audio = document.createElement('audio');
-      audio.src = `../assets/sound/${position}.m4a`
+      audio.src = `https://denisamador24.github.io/eduni/assets/sound/${position.toLowerCase()}.m4a`
       
       syllable.appendChild(audio);
       syllable.addEventListener('click',

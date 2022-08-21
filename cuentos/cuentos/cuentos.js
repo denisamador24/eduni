@@ -11,7 +11,7 @@ class Cuento{
   
   //recivir nombre de imagen y retortar componente
   get img(){
-    let picture = '../assets/img/' + this._img + '.jpg';
+    let picture = 'https://denisamador24.github.io/eduni/assets/img/' + this._img + '.jpg';
     
     return picture;
   }
