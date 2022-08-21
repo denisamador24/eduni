@@ -1,7 +1,4 @@
 function startListSyllables (){
-  const srcSound = '../assets/sound/';
-  const soundFormat = '.m4a';
-  
   class Syllable {
     constructor(
       letter,
@@ -9,13 +6,6 @@ function startListSyllables (){
     ){
       this.letter = letter;
       this.letters = letters;
-      
-    }
-    
-    getSrcSoud(position) {
-      //console.log(srcSound + name + soundFormat);
-      return srcSound + this.letters[position].toLowerCase() + soundFormat;
-      
     }
   }
   
@@ -41,45 +31,37 @@ function startListSyllables (){
   syllables.push(new Syllable('Y',['Ya','Ye','Yi','Yo','Yu']));
   syllables.push(new Syllable('Z',['Za','Ze','Zi','Zo','Zu']));
   
-  for (syllable of syllables) {
-    let card = CreateElements(syllable);
-   
-    syllablesDiv.appendChild(card);
-  }
+  
+  syllables.forEach(elemen => {
+    const syllableCard = document.createElement('div');
+  
+    const letterP = document.createElement('p');
+    letterP.setAttribute('class', 'silabas__letter');
+    letterP.innerHTML = elemen.letter;
+    
+    const syllablesContainer = document.createElement('div');
+    syllablesContainer.setAttribute('class', 'silabas__container');
+    
+    
+    elemen.letters.forEach(position => {
+      let syllable = document.createElement('div');
+      syllable.innerHTML = position;
+      
+      let audio = document.createElement('audio');
+      audio.src = `../assets/sound/${position}.m4a`
+      
+      syllable.appendChild(audio);
+      syllable.addEventListener('click',
+        function() {
+          audio.play();
+        }
+      )
+      
+      syllablesContainer.appendChild(syllable);
+    });
+    
+    syllableCard.appendChild(letterP);
+    syllableCard.appendChild(syllablesContainer);
+    syllablesDiv.appendChild(syllableCard);
+  });
 }
-
-function CreateElements(elemen) {
-  
-  const syllableCard = document.createElement('div');
-  
-  const letterP = document.createElement('p');
-  letterP.setAttribute('class', 'silabas__letter');
-  letterP.innerHTML = elemen.letter;
-  
-  const syllablesContainer = document.createElement('div');
-  syllablesContainer.setAttribute('class', 'silabas__container');
-  
-  for (position in elemen.letters) {
-    
-    let syllable = document.createElement('div');
-    syllable.innerHTML = elemen.letters[position];
-    
-    let audio = document.createElement('audio');
-    audio.src = elemen.getSrcSoud(position);
-    
-    syllable.appendChild(audio);
-    syllable.addEventListener('click', 
-      function() {
-        audio.play();
-      }
-    )
-    
-    syllablesContainer.appendChild(syllable);
-  }
-  
-  syllableCard.appendChild(letterP);
-  syllableCard.appendChild(syllablesContainer);
-  
-  return syllableCard;
-}
-
