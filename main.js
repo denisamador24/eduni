@@ -26,5 +26,5 @@ cardCuentos.addEventListener('click', () => {
   location.hash = '#stories';
 });
 
-setInterval(timer, 1000);
 
+setInterval(timer, 1000);

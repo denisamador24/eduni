@@ -12,12 +12,18 @@ html {
 }
 body {
   height: 100vh;
-    background-image: url('./assets/img/globos.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Alber Sans';
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Alber Sans';
+  background-image: url('./assets/img/globos.jpg');
 }
-
+.background-image {
+  background-image: url('./assets/img/globos.jpg');
+}
+.background-white {
+  background-image: none;
+  background-color: white;
+}
 /* header */
 header {
   width: 100%;
@@ -43,6 +49,9 @@ header .container {
   height: 48px;
   object-fit: cover;
   border-radius: 50px;
+}
+.back-img {
+  object-fit: contain !important;
 }
 .logo p {
   width: 160px;
@@ -229,28 +238,6 @@ main {
 
 
 /* Sección leer cuento */
-.title {
-  padding: 8px;
-  display: flex;
-  align-items: center;
-}
-.title #back {
-  width: 44px;
-  height: 44px;
-  padding: 8px;
-  background-color: white;
-  border-radius: 50px;
-}
-.title #back img {
-  width: 100%;
-  align-self: center;
-  padding-top: 2px;
-}
-.title > p {
-  margin-left: 16px;
-  font-size: 2rem;
-  font-weight: 500;
-}
 #read-cuento .picture {
   display: flex;
   justify-content: center;

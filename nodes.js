@@ -1,4 +1,5 @@
 const body = document.querySelector('body');
+const bodyMain = document.querySelector('main');
 
 // Header 
 const headerImg = document.querySelector('.logo .logo__img');
