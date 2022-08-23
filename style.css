@@ -24,6 +24,14 @@ body {
   background-image: none;
   background-color: white;
 }
+.disable-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently supported by any browser but < IE9 */
+}
 /* header */
 header {
   width: 100%;
@@ -174,7 +182,6 @@ main {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  
 }
 .abecedario__item:active,
 .abecedario__item--english:active {
