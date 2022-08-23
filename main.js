@@ -1,5 +1,6 @@
-// decisiones visitadas 
+// secciones visitadas 
 let abcVisited = false;
+let abcEnglishVisited = false;
 let syllablesVisited = false;
 let storiesVisited = false;
 let readStoryVited = false;
@@ -11,6 +12,15 @@ cardAbedario.addEventListener('click', () => {
   }
   location.hash = '#alphabet';
 });
+
+cardAlphabetEnglish.addEventListener('click', () => {
+  if (!abcEnglishVisited){
+    startListAlphabetEnglish();
+    abcEnglishVisited = true;
+  }
+  location.hash = '#alphabet-english'
+});
+
 cardSilabas.addEventListener('click', () => {
   if (!syllablesVisited){
     startListSyllables();
@@ -18,6 +28,7 @@ cardSilabas.addEventListener('click', () => {
   }
   location.hash = '#syllables';
 });
+
 cardCuentos.addEventListener('click', () => {
   if (!storiesVisited){
     startListStories();

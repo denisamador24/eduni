@@ -8,11 +8,13 @@ const headerTitle = document.querySelector('.logo .logo__name');
 // Home
 const categoryContainer = document.getElementById('category-container');
 const cardAbedario = document.getElementById('card-abecedario');
+const cardAlphabetEnglish = document.getElementById('card-alphabet-en');
 const cardSilabas = document.getElementById('card-silabas');
 const cardCuentos = document.getElementById('card-cuentos');
 
 // Alphabet
-const gridAbecedario = document.getElementById("abecedario")
+const gridAbecedario = document.getElementById("abecedario");
+const alphabetEnglish = document.getElementById('abecedario-en');
 
 // Syllable
 const syllablesDiv = document.getElementById('silabas');
