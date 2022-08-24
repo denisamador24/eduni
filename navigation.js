@@ -1,4 +1,5 @@
 window.addEventListener('hashchange', navigate);
+window.addEventListener('DOMContentLoaded', navigate);
 headerImg.addEventListener('click', () => {
   saveScroll();
   history.back();
