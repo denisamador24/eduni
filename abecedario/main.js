@@ -1,7 +1,7 @@
 function startListAlphabet (){
   const alphabet = ['A','B','C','D','E','F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ñ' ,'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
   const formatSound = ".m4a"
-  const srcSounds = "https://denisamador24.github.io/eduni/assets/sound/"
+  const srcSounds = "./assets/sound/"
   
   alphabet.forEach(letter => {
     const itemGrid = document.createElement('div');
